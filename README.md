@@ -11,6 +11,5 @@
 
   GitHub：https://github.com/qinguoyi/TinyWebServer
 
-  [TinyWebServer——从0到服务器开发！](https://zhuanlan.zhihu.com/p/364044293)
+  https://blog.csdn.net/weixin_51322383/article/details/130464403
 
-  [【TinyWebServer】详解 - 01 线程同步机制包装类](https://2yuan.club/posts/336d3217/)
