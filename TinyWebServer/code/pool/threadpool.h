@@ -1,13 +1,12 @@
 #ifndef THREADPOOL_H
 #define THREADPOOL_H
 
-#include <queue>
-#include <mutex>
-#include <condition_variable>
-#include <functional>
-#include <thread>
-#include <assert.h>
-
+#include <queue> // 队列头文件
+#include <mutex> // 互斥锁
+#include <condition_variable> // 条件变量
+#include <functional> // 类似C语言中的函数指针，实质就是把函数存在某个位置当条件不同执行不同的函数
+#include <thread> // C++11标准库中的多线程库
+#include <cassert>
 
 class ThreadPool {
 public:
@@ -31,7 +30,6 @@ public:
                     } else {
                         pool_->cond_.wait(locker);    // 等待,如果任务来了就notify的
                     }
-                    
                 }
             }).detach();
         }
@@ -63,4 +61,4 @@ private:
     std::shared_ptr<Pool> pool_;
 };
 
-#endif
+#endif //THREADPOOL_H

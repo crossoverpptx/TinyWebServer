@@ -1,7 +1,7 @@
 #ifndef EPOLLER_H
 #define EPOLLER_H
 
-#include <sys/epoll.h> //epoll_ctl()
+#include <sys/epoll.h> // epoll_ctl()
 #include <unistd.h> // close()
 #include <assert.h> // close()
 #include <vector>

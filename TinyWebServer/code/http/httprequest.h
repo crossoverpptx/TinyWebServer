@@ -6,7 +6,7 @@
 #include <string>
 #include <regex>    // 正则表达式
 #include <errno.h>     
-#include <mysql/mysql.h>  //mysql
+#include <mysql/mysql.h>  // mysql
 
 #include "../buffer/buffer.h"
 #include "../log/log.h"
@@ -57,4 +57,4 @@ private:
     static int ConverHex(char ch);  // 16进制转换为10进制
 };
 
-#endif
+#endif //HTTP_REQUEST_H

@@ -1,4 +1,5 @@
 #include "httpconn.h"
+
 using namespace std;
 
 const char* HttpConn::srcDir;

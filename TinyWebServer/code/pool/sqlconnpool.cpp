@@ -7,8 +7,8 @@ SqlConnPool* SqlConnPool::Instance() {
 
 // 初始化
 void SqlConnPool::Init(const char* host, uint16_t port,
-              const char* user,const char* pwd, 
-              const char* dbName, int connSize = 10) {
+                       const char* user, const char* pwd, 
+                       const char* dbName, int connSize = 10) {
     assert(connSize > 0);
     for(int i = 0; i < connSize; i++) {
         MYSQL* conn = nullptr;
