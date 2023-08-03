@@ -68,7 +68,7 @@ CREATE TABLE user(
 )ENGINE=InnoDB;
 
 // 添加数据
-INSERT INTO user(username, password) VALUES('name', 'password');
+INSERT INTO user(username, password) VALUES('username', 'password');
 ```
 
 ## Test
@@ -97,3 +97,4 @@ Linux高性能服务器编程，游双著.
 [@qinguoyi](https://github.com/qinguoyi/TinyWebServer)
 
 初次使用c++的TinyWebServer时遇到的一些报错与解决方案：https://blog.csdn.net/Mushuroom/article/details/131444898
+
